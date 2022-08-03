@@ -10,7 +10,7 @@ import { PORT } from "./config.js";
 
 const app = express();
 const __dirname = dirname(fileURLToPath(import.meta.url));
-console.log(__dirname);
+
 const server = http.createServer(app);
 const io = new SocketServer(server, {
   cors: {
